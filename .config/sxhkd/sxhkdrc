@@ -1,0 +1,23 @@
+super + w
+	${BROWSER}
+
+alt + {equal,minus,BackSpace}
+	volume.sh {up,down,mute}
+
+super + e 
+	st -c fzfmenu -e exit.sh 
+
+super + b
+	wallpapermenu.sh
+
+super + v
+	clipmenu.sh
+
+Print
+	screenshot.sh
+
+super + p
+	    st -t fzf-menu \
+       		-c fzfmenu \
+       		-e bash -c "source /home/yousif/.bashrc &>/dev/null && /home/yousif/bin/fzfmenu/fzfmenu2.sh"
+
